@@ -49,10 +49,6 @@ header > h1 {
 
 /** Game square style class **/
 
-.fuck {
-    background-color: red;
-}
-
 .game-square {
     border: 5px solid white;
     width: 200px;

@@ -17,6 +17,8 @@ let l3r1_div = document.getElementById("l3r1");
 let l3r2_div = document.getElementById("l3r2");
 let l3r3_div = document.getElementById("l3r3");
 
+let playerinfo_h1 = document.getElementById("player-text");
+
 function displayImage(userChoice) {
     if (player1) {
         userChoice.innerHTML = "<img src='images/circle.svg' width='150'/>"; 
@@ -36,7 +38,7 @@ function game(userChoice) {
         } else {
             player1_positions.push(userChoice);
             player1 = !player1;
-            console.log("player1's turn over");
+            playerinfo_h1.innerHTML = "SECOND PLAYER'S TURN!";
             displayImage(userChoice);
         }
     } else {
@@ -46,7 +48,7 @@ function game(userChoice) {
         } else {
             player2_positions.push(userChoice);
             player1 = !player1;
-            console.log("player2's turn over");
+            playerinfo_h1.innerHTML = "FIRST PLAYER'S TURN!";
             displayImage(userChoice);
         }
     }

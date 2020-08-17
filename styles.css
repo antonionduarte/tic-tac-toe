@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
 
 * {
     margin: 0;
@@ -22,10 +23,23 @@ header > h1 {
     text-align: center;
 }
 
+.player {
+    margin: 50px auto;
+    background-color: #27252D;
+    font-family: 'Oxygen', sans-serif;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    width: 590px;
+    border: 5px solid 27252D;
+    border-radius: 10px;
+}
+
 /** Main game container **/
 
 .game-container {
-    margin: 100px auto;
+    border-radius: 10px;
+    margin: auto;
     border: 5px solid white;
     width: 590px;
     height: 590px;

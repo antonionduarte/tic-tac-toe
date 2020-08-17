@@ -63,6 +63,13 @@ header > h1 {
     transition: ease 300ms;
 }
 
+.game-square > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
 .game-square:hover {
     cursor: pointer;
     background-color: #B7D5D4;

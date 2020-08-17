@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3B3743;
+}
+
+header {
+    background-color: aliceblue;
+    padding: 25px;
+}
+
+header > h1 {
+    color: #3B3743;
+    font-size: 40px;
+    font-family: 'Do Hyeon', sans-serif;
+    text-align: center;
+}
+
+/** Main game container **/
+
+.game-container {
+    margin: 100px auto;
+    border: 5px solid white;
+    width: 590px;
+    height: 590px;
+    padding: 0px;
+    position: relative;
+}
+
+/** Game square style class **/
+
+.fuck {
+    background-color: red;
+}
+
+.game-square {
+    border: 5px solid white;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+/** Individual boxes **/
+
+#l1r1 {
+    position: absolute;
+    left: -5px;
+}
+
+#l1r2 {
+    position: absolute;
+    left: 190px;
+}
+
+#l1r3 {
+    position: absolute;
+    left: 385px;
+}
+
+#l2r1 {
+    position: absolute;
+    top: 190px;
+    left: -5px;
+}
+
+#l2r2 {
+    position: absolute;
+    top: 190px;
+    left: 190px;
+}
+
+#l2r3 {
+    position: absolute;
+    top: 190px;
+    left: 385px;
+}
+
+#l3r1 {
+    position: absolute;
+    top: 385px;
+    left: -5px;
+}
+
+#l3r2 {
+    position: absolute;
+    top: 385px;
+    left: 190px;
+}
+
+#l3r3 {
+    position: absolute;
+    top: 385px;
+    left: 385px;
+}

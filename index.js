@@ -32,9 +32,9 @@ let playerinfo_h1 = document.getElementById("player-text");
  */
 function displayImage(userChoice) {
     if (player1) {
-        userChoice.innerHTML = "<img src='images/circle.svg' width='150'/>"; 
+        userChoice.innerHTML = "<img src='images/circle.svg' width='150'/>";
     } else {
-        userChoice.innerHTML = "<img src='images/cross.svg' width='150'/>"; 
+        userChoice.innerHTML = "<img src='images/cross.svg' width='150'/>";
     }
 }
 
@@ -53,7 +53,7 @@ function game(userChoice) {
             playerinfo_h1.innerHTML = "<em>SECOND PLAYER'S</em> TURN!";
 
             let divs = document.querySelectorAll(".game-square");
-            divs.forEach(element => {element.classList.replace("active-player1", "active-player2")});
+            divs.forEach(element => { element.classList.replace("active-player1", "active-player2") });
 
             displayImage(userChoice);
             occupied++;
@@ -64,14 +64,14 @@ function game(userChoice) {
     } else {
         if (player1_positions.includes(userChoice) || player2_positions.includes(userChoice)) {
             console.log("choose an empty position.");
-                // TODO: display this visually
+            // TODO: display this visually
         } else {
             player2_positions.push(userChoice);
             playerinfo_h1.classList.replace("player2", "player1");
 
-                    
+
             let divs = document.querySelectorAll(".game-square");
-            divs.forEach(element => {element.classList.replace("active-player2", "active-player1")});
+            divs.forEach(element => { element.classList.replace("active-player2", "active-player1") });
 
             playerinfo_h1.innerHTML = "<em>FIRST PLAYER'S</em> TURN!";
             displayImage(userChoice);
@@ -142,7 +142,7 @@ function checkIfWon() {
             playerinfo_h1.innerHTML = "FIRST PLAYER WON!"
             player1_score++;
             setTimeout(() => clearBoard(), 200);
-        } 
+        }
     } else {
         if (player2_positions.includes(l1r1_div) && player2_positions.includes(l1r2_div) && player2_positions.includes(l1r3_div)) {
             playerinfo_h1.innerHTML = "SECOND PLAYER WON!"
@@ -183,7 +183,7 @@ function checkIfWon() {
             playerinfo_h1.innerHTML = "SECOND PLAYER WON!"
             player1_score++;
             setTimeout(() => clearBoard(), 200);
-        } 
+        }
     }
 }
 
@@ -192,7 +192,7 @@ function checkIfWon() {
  */
 function clearBoard() {
     let divs = document.querySelectorAll(".game-square");
-    divs.forEach(element => {element.innerHTML = ""});
+    divs.forEach(element => { element.innerHTML = "" });
     player1_positions = new Array(9);
     player2_positions = new Array(9);
     occupied = 0;

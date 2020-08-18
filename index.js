@@ -3,6 +3,9 @@
 let player1_positions = new Array(9);
 let player2_positions = new Array(9);
 
+let player1_score = 0;
+let player2_score = 0;
+
 let occupied = 0;
 
 let player1 = true; // which player is currently playing
@@ -91,6 +94,10 @@ function checkIfDraw() {
     }
 }
 
+function updateScore() {
+    // TODO: stub
+}
+
 /**
  * Check if the current player won.
  */
@@ -98,67 +105,83 @@ function checkIfWon() {
     if (player1) {
         if (player1_positions.includes(l1r1_div) && player1_positions.includes(l1r2_div) && player1_positions.includes(l1r3_div)) {
             playerinfo_h1.innerHTML = "FIRST PLAYER WON!"
+            player1_score++;
             setTimeout(() => clearBoard(), 200);
         }
         if (player1_positions.includes(l2r1_div) && player1_positions.includes(l2r2_div) && player1_positions.includes(l2r3_div)) {
             playerinfo_h1.innerHTML = "FIRST PLAYER WON!"
+            player1_score++;
             setTimeout(() => clearBoard(), 200);
         }
         if (player1_positions.includes(l3r1_div) && player1_positions.includes(l3r2_div) && player1_positions.includes(l3r3_div)) {
             playerinfo_h1.innerHTML = "FIRST PLAYER WON!"
+            player1_score++;
             setTimeout(() => clearBoard(), 200);
         }
         if (player1_positions.includes(l1r1_div) && player1_positions.includes(l2r1_div) && player1_positions.includes(l3r1_div)) {
             playerinfo_h1.innerHTML = "FIRST PLAYER WON!"
+            player1_score++;
             setTimeout(() => clearBoard(), 200);
         }
         if (player1_positions.includes(l1r2_div) && player1_positions.includes(l2r2_div) && player1_positions.includes(l3r2_div)) {
             playerinfo_h1.innerHTML = "FIRST PLAYER WON!"
+            player1_score++;
             setTimeout(() => clearBoard(), 200);
         }
         if (player1_positions.includes(l1r3_div) && player1_positions.includes(l2r3_div) && player1_positions.includes(l3r3_div)) {
             playerinfo_h1.innerHTML = "FIRST PLAYER WON!"
+            player1_score++;
             setTimeout(() => clearBoard(), 200);
         }
         if (player1_positions.includes(l1r1_div) && player1_positions.includes(l2r2_div) && player1_positions.includes(l3r3_div)) {
             playerinfo_h1.innerHTML = "FIRST PLAYER WON!"
+            player1_score++;
             setTimeout(() => clearBoard(), 200);
         }
         if (player1_positions.includes(l1r3_div) && player1_positions.includes(l2r2_div) && player1_positions.includes(l3r1_div)) {
             playerinfo_h1.innerHTML = "FIRST PLAYER WON!"
+            player1_score++;
             setTimeout(() => clearBoard(), 200);
         } 
     } else {
         if (player2_positions.includes(l1r1_div) && player2_positions.includes(l1r2_div) && player2_positions.includes(l1r3_div)) {
             playerinfo_h1.innerHTML = "SECOND PLAYER WON!"
+            player1_score++;
             setTimeout(() => clearBoard(), 200);
         }
         if (player2_positions.includes(l2r1_div) && player2_positions.includes(l2r2_div) && player2_positions.includes(l2r3_div)) {
             playerinfo_h1.innerHTML = "SECOND PLAYER WON!"
+            player1_score++;
             setTimeout(() => clearBoard(), 200);
         }
         if (player2_positions.includes(l3r1_div) && player2_positions.includes(l3r2_div) && player2_positions.includes(l3r3_div)) {
             playerinfo_h1.innerHTML = "SECOND PLAYER WON!"
+            player1_score++;
             setTimeout(() => clearBoard(), 200);
         }
         if (player2_positions.includes(l1r1_div) && player2_positions.includes(l2r1_div) && player2_positions.includes(l3r1_div)) {
             playerinfo_h1.innerHTML = "SECOND PLAYER WON!"
+            player1_score++;
             setTimeout(() => clearBoard(), 200);
         }
         if (player2_positions.includes(l1r2_div) && player2_positions.includes(l2r2_div) && player2_positions.includes(l3r2_div)) {
             playerinfo_h1.innerHTML = "SECOND PLAYER WON!"
+            player1_score++;
             setTimeout(() => clearBoard(), 200);
         }
         if (player2_positions.includes(l1r3_div) && player2_positions.includes(l2r3_div) && player2_positions.includes(l3r3_div)) {
             playerinfo_h1.innerHTML = "SECOND PLAYER WON!"
+            player1_score++;
             setTimeout(() => clearBoard(), 200);
         }
         if (player2_positions.includes(l1r1_div) && player2_positions.includes(l2r2_div) && player2_positions.includes(l3r3_div)) {
             playerinfo_h1.innerHTML = "SECOND PLAYER WON!"
+            player1_score++;
             setTimeout(() => clearBoard(), 200);
         }
         if (player2_positions.includes(l1r3_div) && player2_positions.includes(l2r2_div) && player2_positions.includes(l3r1_div)) {
             playerinfo_h1.innerHTML = "SECOND PLAYER WON!"
+            player1_score++;
             setTimeout(() => clearBoard(), 200);
         } 
     }

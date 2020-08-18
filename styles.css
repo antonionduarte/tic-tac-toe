@@ -63,12 +63,31 @@ header > h1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    transition: ease 300ms;
     margin-top: 20px;
 }
 
 .game-square:hover {
     cursor: pointer;
-    background-color: #B7D5D4;
+    background-color: #B7D5D4;;
+}
+
+.player2 > em {
+    font-style: normal;
+    color: #CF4D6F;
+}
+
+.player1 > em {
+    font-style: normal;
+    color: #6D9F71;
+}
+
+.active-player1:hover {
+    background-color: #CEDFCF;
+}
+
+.active-player2:hover {
+    background-color: #EAAEBE;
 }
 
 /** Individual boxes **/

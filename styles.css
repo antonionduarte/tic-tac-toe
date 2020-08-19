@@ -24,6 +24,7 @@ header > h1 {
 }
 
 .player {
+    position: relative;
     margin: 50px auto;
     background-color: #27252D;
     font-family: 'Oxygen', sans-serif;
@@ -33,6 +34,33 @@ header > h1 {
     width: 590px;
     border: 5px solid 27252D;
     border-radius: 10px;
+}
+
+/** Scoreboard **/
+
+.scoreboard-player1 {
+    position: absolute;
+    background: #6D9F71;
+    font-family: 'Oxygen', sans-serif;
+    font-size: large;
+    top: 35px;
+    left: -75px;
+    padding: 15px;
+    box-shadow: 0 2.5px 10px #000000;
+    border-radius: 5px;
+}
+
+.scoreboard-player2 {
+    position: absolute;
+    background: #CF4D6F;
+    font-family: 'Oxygen', sans-serif;
+    font-size: large;
+    top: 35px;
+    right: -75px;
+    padding: 15px;
+    box-shadow: 0 2.5px 10px #000000;
+    border-radius: 5px;
+
 }
 
 /** Main game container **/

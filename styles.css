@@ -66,9 +66,7 @@ header > h1 {
 /** Main game container **/
 
 .game-container {
-    border-radius: 10px;
     margin: auto;
-    border: 5px solid white;
     width: 590px;
     height: 590px;
     padding: 0px;
@@ -78,7 +76,6 @@ header > h1 {
 /** Game square style class **/
 
 .game-square {
-    border: 5px solid white;
     width: 200px;
     height: 200px;
     position: absolute;
@@ -121,45 +118,57 @@ header > h1 {
 /** Individual boxes **/
 
 #l1r1 {
+    border-right: 5px solid white;
+    border-bottom: 5px solid white;
     position: absolute;
     left: -5px;
 }
 
 #l1r2 {
+    border-bottom: 5px solid white;
     position: absolute;
     left: 190px;
 }
 
 #l1r3 {
+    border-left: 5px solid white;
+    border-bottom: 5px solid white;
     position: absolute;
     left: 385px;
 }
 
 #l2r1 {
+    border-right: 5px solid white;
+    border-bottom: 5px solid white;
     position: absolute;
     top: 190px;
     left: -5px;
 }
 
 #l2r2 {
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
     position: absolute;
     top: 190px;
     left: 190px;
 }
 
 #l2r3 {
+    border-bottom: 5px solid white;
     position: absolute;
     top: 190px;
     left: 385px;
 }
 
 #l3r1 {
+    border-right: 5px solid white;
     position: absolute;
     top: 385px;
     left: -5px;
 }
 
 #l3r2 {
+    border-right: 5px solid white;
     position: absolute;
     top: 385px;
     left: 190px;
